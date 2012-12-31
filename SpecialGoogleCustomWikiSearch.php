@@ -23,7 +23,7 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 
 		$this->showResults( $search );
 	}
-	
+
 	/**
 	 * @param $term String
 	 */
@@ -44,10 +44,10 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 <div id="cse" style="width: 100%;">Loading</div>
 END
 		);
-		
+
 		$out->addScript(<<<END
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript"> 
+<script type="text/javascript">
   google.load('search', '1', {language : '$languageCode', style : google.loader.themes.$theme});
   google.setOnLoadCallback(function() {
 	var options = new google.search.DrawOptions();
@@ -62,7 +62,7 @@ END
 		$out->parserOptions()->setEditSection( false );
 		wfProfileOut( __METHOD__ );
 	}
-	
+
 	/**
 	 * @param $term string
 	 */
@@ -73,13 +73,13 @@ END
 			$out->setHTMLTitle( $this->msg( 'pagetitle', $this->msg( 'searchresults-title', $term )->plain() ) );
 		}
 	}
-	
+
 	/**
-	 * 
+	 *
 	 */
 	protected function getOptions() {
 		global $gcwsCustomSearchOptions, $gcwsID;
-		
+
 		if ( $gcwsCustomSearchOptions == '' ) {
 		    return "var customSearchControl = new google.search.CustomSearchControl( '$gcwsID' )";
 		}

@@ -12,9 +12,9 @@ $wgExtensionCredits['specialpage'][] = array(
         'descriptionmsg' => 'gcws-desc',
         'version' => '0.1 alpha',
 );
- 
-$dir = dirname(__FILE__) . '/';
- 
+
+$dir = __DIR__ . '/';
+
 $wgAutoloadClasses['SpecialGoogleCustomWikiSearch'] = $dir . 'SpecialGoogleCustomWikiSearch.php';
 $wgAutoloadClasses['GoogleCustomWikiSearchSettings'] = $dir . 'GoogleCustomWikiSearch.settings.php';
 $wgExtensionMessagesFiles['MyExtensionAlias'] = $dir . 'SpecialGoogleCustomWikiSearch.alias.php';
