@@ -12,3 +12,8 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'GoogleCustomWikiSearch' => array( 'GoogleCustomWikiSearch', 'Google Custom Wiki Search' ),
 );
+
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'GoogleCustomWikiSearch' => array( 'GoogleAangepastWikizoeken' ),
+);

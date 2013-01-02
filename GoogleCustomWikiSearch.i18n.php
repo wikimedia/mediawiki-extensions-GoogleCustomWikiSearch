@@ -24,12 +24,28 @@ $messages['qqq'] = array(
 	'gcws-desc' => '{{desc|name=Google Custom Wiki Search|url=http://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch}}',
 );
 
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'googlecustomwikisearch' => 'Google Custom Wiki Search',
+	'gcws-desc' => 'Інтэграцыя Google Custom Search або Google Site Search у MediaWiki.',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
 $messages['de'] = array(
 	'googlecustomwikisearch' => 'Benutzerdefinierte Google-Wikisuche',
 	'gcws-desc' => 'Ermöglicht die MediaWiki-Integration mit der benutzerdefinierten Google-Suche oder der Google-Websitesuche',
+);
+
+/** French (français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'googlecustomwikisearch' => 'Recherche dans le wiki par personnalisation de Google',
+	'gcws-desc' => "Autorise l'intégration de MediaWiki dans la recherche personnalisée de Google ou la recherche de site de Google.",
 );
 
 /** Japanese (日本語)
