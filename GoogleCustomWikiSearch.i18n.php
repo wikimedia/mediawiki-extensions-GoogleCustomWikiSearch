@@ -48,12 +48,35 @@ $messages['fr'] = array(
 	'gcws-desc' => "Autorise l'intégration de MediaWiki dans la recherche personnalisée de Google ou la recherche de site de Google.",
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'googlecustomwikisearch' => 'Procura wiki personalizada do Google',
+	'gcws-desc' => 'Permite a integración de MediaWiki coa procura personalizada do Google ou coa procura de sitios do Google.',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'googlecustomwikisearch' => 'Ricerca personalizzata tramite Google',
+	'gcws-desc' => "Permette l'integrazione di MediaWiki con Google Custom Search o Google Site Search.",
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
 $messages['ja'] = array(
 	'googlecustomwikisearch' => 'Google カスタム ウィキ検索',
 	'gcws-desc' => 'MediaWiki を Google カスタム検索や Google サイト検索と統合できるようにする',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'googlecustomwikisearch' => 'Benotzerdefinéiert Google-Wiki-Sichfonctioun',
 );
 
 /** Macedonian (македонски)
