@@ -72,6 +72,14 @@ $messages['ja'] = array(
 	'gcws-desc' => 'MediaWiki を Google カスタム検索や Google サイト検索と統合できるようにする',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'googlecustomwikisearch' => 'Google 맞춤 위키 검색',
+	'gcws-desc' => 'Google 맞춤 검색이나 Google 사이트 검색을 미디어위키에 통합하는 것을 허용',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
