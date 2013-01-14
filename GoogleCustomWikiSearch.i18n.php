@@ -24,6 +24,14 @@ $messages['qqq'] = array(
 	'gcws-desc' => '{{desc|name=Google Custom Wiki Search|url=http://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch}}',
 );
 
+/** Arabic (العربية)
+ * @author Mido
+ */
+$messages['ar'] = array(
+	'googlecustomwikisearch' => 'بحث جوجل المخصص للويكي',
+	'gcws-desc' => 'يسمح للميدياويكي بالتكامل مع بحث جوجل المخصص أو بحث جوجل للمواقع',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
