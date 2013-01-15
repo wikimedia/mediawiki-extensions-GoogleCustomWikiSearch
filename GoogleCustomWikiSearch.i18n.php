@@ -110,3 +110,11 @@ $messages['pms'] = array(
 	'googlecustomwikisearch' => 'Google Custom Search ëd Wiki',
 	'gcws-desc' => "A përmëtt a MediaWiki l'integrassion con Google Custom Search o Google Site Search.",
 );
+
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'googlecustomwikisearch' => 'Користувацький вікіпошук Google',
+	'gcws-desc' => 'Дозволяє інтеграцію MediaWiki з користувацьким пошуком Google або Google Site Search.',
+);
