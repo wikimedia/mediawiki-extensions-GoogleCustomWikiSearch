@@ -118,3 +118,11 @@ $messages['uk'] = array(
 	'googlecustomwikisearch' => 'Користувацький вікіпошук Google',
 	'gcws-desc' => 'Дозволяє інтеграцію MediaWiki з користувацьким пошуком Google або Google Site Search.',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'googlecustomwikisearch' => 'Google Custom Wiki Search',
+	'gcws-desc' => '允许MediaWiki与Google Custom Search或Google Site Search集成。',
+);
