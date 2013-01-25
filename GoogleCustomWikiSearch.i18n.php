@@ -111,6 +111,13 @@ $messages['pms'] = array(
 	'gcws-desc' => "A përmëtt a MediaWiki l'integrassion con Google Custom Search o Google Site Search.",
 );
 
+/** Russian (русский)
+ * @author DCamer
+ */
+$messages['ru'] = array(
+	'gcws-desc' => 'Позволяет интегрировать MediaWiki с Google Custom Search или Google Site Search.',
+);
+
 /** Ukrainian (українська)
  * @author Ата
  */
