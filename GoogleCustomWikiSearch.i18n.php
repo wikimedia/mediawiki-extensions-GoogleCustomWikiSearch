@@ -32,6 +32,14 @@ $messages['ar'] = array(
 	'gcws-desc' => 'يسمح للميدياويكي بالتكامل مع بحث جوجل المخصص أو بحث جوجل للمواقع',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'googlecustomwikisearch' => 'Gueta wiki personalizada de Google',
+	'gcws-desc' => 'Permite la integración de MediaWiki cola gueta personalizada de Google o cola gueta de sitios de Google.',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
@@ -101,6 +109,14 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'googlecustomwikisearch' => 'Прилагодено википребарување со Google',
 	'gcws-desc' => 'Го овозможува прилагоденото пребарување на Google во МедијаВики.',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'googlecustomwikisearch' => "Google Aangepast zoeken voor wiki's",
+	'gcws-desc' => 'Maakt het mogelijk te integreren met Google Aangepast zoeken of Google Site Search',
 );
 
 /** Piedmontese (Piemontèis)
