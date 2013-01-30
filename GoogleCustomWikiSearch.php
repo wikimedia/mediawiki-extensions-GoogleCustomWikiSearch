@@ -13,7 +13,7 @@ $wgExtensionCredits['specialpage'][] = array(
         'version' => '0.1 alpha',
 );
 
-$dir = __DIR__ . '/';
+$dir = dirname(__FILE__) . '/';
 
 $wgAutoloadClasses['SpecialGoogleCustomWikiSearch'] = $dir . 'SpecialGoogleCustomWikiSearch.php';
 $wgAutoloadClasses['GoogleCustomWikiSearchSettings'] = $dir . 'GoogleCustomWikiSearch.settings.php';
