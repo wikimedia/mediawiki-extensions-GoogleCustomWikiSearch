@@ -12,7 +12,7 @@ $messages = array();
  */
 $messages['en'] = array(
         'googlecustomwikisearch' => 'Google Custom Wiki Search',
-        'gcws-desc' => 'Allows MediaWiki integration with Google Custom Search or Google Site Search.'
+        'gcws-desc' => 'Allows integration with Google Custom Search or Google Site Search'
 );
 
 /** Message documentation (Message documentation)
