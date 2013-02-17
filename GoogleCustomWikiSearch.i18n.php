@@ -20,7 +20,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'googlecustomwikisearch' => "The name of the extension's entry in Special:SpecialPages",
+	'googlecustomwikisearch' => "The name of the extension's entry in [[Special:SpecialPages]]",
 	'gcws-desc' => '{{desc|name=Google Custom Wiki Search|url=http://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch}}',
 );
 
