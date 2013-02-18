@@ -127,6 +127,14 @@ $messages['pms'] = array(
 	'gcws-desc' => "A përmëtt a MediaWiki l'integrassion con Google Custom Search o Google Site Search.",
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'googlecustomwikisearch' => 'Ricerche Personalizzate de Google pe le Uicchi',
+	'gcws-desc' => "Permette l'indegrazione de MediaUicchi cu 'a Ricerche Personalizzate de Google o 'a Ricerche sus a le Site de Google.",
+);
+
 /** Russian (русский)
  * @author DCamer
  */
