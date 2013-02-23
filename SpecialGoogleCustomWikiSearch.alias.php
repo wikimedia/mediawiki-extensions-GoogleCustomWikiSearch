@@ -27,3 +27,8 @@ $specialPageAliases['ko'] = array(
 $specialPageAliases['nl'] = array(
 	'GoogleCustomWikiSearch' => array( 'GoogleAangepastWikizoeken' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'GoogleCustomWikiSearch' => array( 'Google定制搜索' ),
+);
