@@ -72,6 +72,14 @@ $messages['gl'] = array(
 	'gcws-desc' => 'Permite a integración de MediaWiki coa procura personalizada do Google ou coa procura de sitios do Google.',
 );
 
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'googlecustomwikisearch' => 'Swójske wikipytanje z Google',
+	'gcws-desc' => 'Zmóžnja integraciju mediaWiki z wikipytanjom Google abo ze sydłowym pytanjom Google',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
