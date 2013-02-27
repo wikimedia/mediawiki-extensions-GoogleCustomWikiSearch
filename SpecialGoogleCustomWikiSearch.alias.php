@@ -32,3 +32,8 @@ $specialPageAliases['nl'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'GoogleCustomWikiSearch' => array( 'Google定制搜索' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'GoogleCustomWikiSearch' => array( 'Google自訂搜尋' ),
+);
