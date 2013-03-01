@@ -23,6 +23,11 @@ $specialPageAliases['ko'] = array(
 	'GoogleCustomWikiSearch' => array( '구글맞춤위키검색', 'Google맞춤위키검색' ),
 );
 
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'GoogleCustomWikiSearch' => array( 'ВикиПребарувањеСоGoogle' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'GoogleCustomWikiSearch' => array( 'GoogleAangepastWikizoeken' ),
