@@ -16,12 +16,11 @@ $wgExtensionCredits['specialpage'][] = array(
 $dir = __DIR__ . '/';
 
 $wgAutoloadClasses['SpecialGoogleCustomWikiSearch'] = $dir . 'SpecialGoogleCustomWikiSearch.php';
-$wgAutoloadClasses['GoogleCustomWikiSearchSettings'] = $dir . 'GoogleCustomWikiSearch.settings.php';
-$wgExtensionMessagesFiles['MyExtensionAlias'] = $dir . 'SpecialGoogleCustomWikiSearch.alias.php';
+$wgExtensionMessagesFiles['GoogleCustomWikiSearchAlias'] = $dir . 'SpecialGoogleCustomWikiSearch.alias.php';
 $wgExtensionMessagesFiles['GoogleCustomWikiSearch'] = $dir . 'GoogleCustomWikiSearch.i18n.php';
 $wgSpecialPages['GoogleCustomWikiSearch'] = 'SpecialGoogleCustomWikiSearch';
 $wgSpecialPageGroups['GoogleCustomWikiSearch'] = 'redirects';
 
-require_once $dir . 'GoogleCustomWikiSearch.Settings.php';
+require_once $dir . 'GoogleCustomWikiSearch.settings.php';
 
 unset( $dir );
