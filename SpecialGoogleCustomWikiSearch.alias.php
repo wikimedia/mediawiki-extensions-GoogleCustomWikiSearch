@@ -18,6 +18,11 @@ $specialPageAliases['de'] = array(
 	'GoogleCustomWikiSearch' => array( 'Benutzerdefinierte_Google-Wikisuche' ),
 );
 
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'GoogleCustomWikiSearch' => array( 'Googleカスタムウィキ検索' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'GoogleCustomWikiSearch' => array( '구글맞춤위키검색', 'Google맞춤위키검색' ),

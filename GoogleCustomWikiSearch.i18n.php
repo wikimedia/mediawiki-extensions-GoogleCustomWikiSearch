@@ -20,7 +20,9 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'googlecustomwikisearch' => "The name of the extension's entry in [[Special:SpecialPages]]",
+	'googlecustomwikisearch' => 'Used as name of the special page in [[Special:SpecialPages]].
+
+Also used as page title in Special:GoogleCustomWikiSearch.',
 	'gcws-desc' => '{{desc|name=Google Custom Wiki Search|url=http://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch}}',
 );
 
@@ -92,7 +94,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'googlecustomwikisearch' => 'Google カスタム ウィキ検索',
+	'googlecustomwikisearch' => 'Googleカスタムウィキ検索',
 	'gcws-desc' => 'MediaWiki を Google カスタム検索や Google サイト検索と統合できるようにする',
 );
 
