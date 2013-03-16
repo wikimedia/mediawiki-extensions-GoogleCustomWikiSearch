@@ -55,7 +55,7 @@ $messages['be-tarask'] = array(
  */
 $messages['de'] = array(
 	'googlecustomwikisearch' => 'Benutzerdefinierte Google-Wikisuche',
-	'gcws-desc' => 'Ermöglicht die MediaWiki-Integration mit der benutzerdefinierten Google-Suche oder der Google-Websitesuche',
+	'gcws-desc' => 'Ermöglicht die Integration mit der benutzerdefinierten Google-Suche oder der Google-Websitesuche',
 );
 
 /** French (français)
@@ -95,7 +95,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'googlecustomwikisearch' => 'Googleカスタムウィキ検索',
-	'gcws-desc' => 'MediaWiki を Google カスタム検索や Google サイト検索と統合できるようにする',
+	'gcws-desc' => 'Google カスタム検索や Google サイト検索と統合できるようにする',
 );
 
 /** Korean (한국어)
