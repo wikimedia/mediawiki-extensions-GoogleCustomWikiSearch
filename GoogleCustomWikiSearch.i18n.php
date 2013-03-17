@@ -79,7 +79,7 @@ $messages['gl'] = array(
  */
 $messages['hsb'] = array(
 	'googlecustomwikisearch' => 'Swójske wikipytanje z Google',
-	'gcws-desc' => 'Zmóžnja integraciju mediaWiki z wikipytanjom Google abo ze sydłowym pytanjom Google',
+	'gcws-desc' => 'Zmóžnja integraciju z wikipytanjom Google abo ze sydłowym pytanjom Google',
 );
 
 /** Italian (italiano)
@@ -165,5 +165,5 @@ $messages['uk'] = array(
  */
 $messages['zh-hans'] = array(
 	'googlecustomwikisearch' => 'Google Custom Wiki Search',
-	'gcws-desc' => '允许MediaWiki与Google Custom Search或Google Site Search集成。',
+	'gcws-desc' => '允许与Google Custom Search或Google Site Search集成',
 );
