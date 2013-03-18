@@ -71,7 +71,7 @@ $messages['fr'] = array(
  */
 $messages['gl'] = array(
 	'googlecustomwikisearch' => 'Procura wiki personalizada do Google',
-	'gcws-desc' => 'Permite a integración de MediaWiki coa procura personalizada do Google ou coa procura de sitios do Google.',
+	'gcws-desc' => 'Permite a integración coa procura personalizada do Google ou coa procura de sitios do Google',
 );
 
 /** Upper Sorbian (hornjoserbsce)
