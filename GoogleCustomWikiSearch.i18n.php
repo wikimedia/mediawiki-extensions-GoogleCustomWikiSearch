@@ -63,7 +63,7 @@ $messages['de'] = array(
  */
 $messages['fr'] = array(
 	'googlecustomwikisearch' => 'Recherche dans le wiki par personnalisation de Google',
-	'gcws-desc' => "Autorise l'intégration de MediaWiki dans la recherche personnalisée de Google ou la recherche de site de Google.",
+	'gcws-desc' => "Autorise l'intégration avec la recherche personnalisée de Google ou la recherche de site de Google.",
 );
 
 /** Galician (galego)
@@ -118,7 +118,7 @@ $messages['lb'] = array(
  */
 $messages['mk'] = array(
 	'googlecustomwikisearch' => 'Прилагодено википребарување со Google',
-	'gcws-desc' => 'Го овозможува прилагоденото пребарување на Google во МедијаВики.',
+	'gcws-desc' => 'Ја внесува можноста за прилагодено пребарување со Google (Custom Search и Site Search)',
 );
 
 /** Dutch (Nederlands)
