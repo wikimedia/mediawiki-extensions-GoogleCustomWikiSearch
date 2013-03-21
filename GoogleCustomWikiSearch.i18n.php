@@ -130,11 +130,12 @@ $messages['nl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'googlecustomwikisearch' => 'Google Custom Search ëd Wiki',
-	'gcws-desc' => "A përmëtt a MediaWiki l'integrassion con Google Custom Search o Google Site Search.",
+	'googlecustomwikisearch' => 'Arserca ant la Wiki con përsonalisassion ëd Google',
+	'gcws-desc' => "A përmët l'integrassion con l'arserca përsonalisà ëd Google o l'arserca ëd sit ëd Google.",
 );
 
 /** tarandíne (tarandíne)
