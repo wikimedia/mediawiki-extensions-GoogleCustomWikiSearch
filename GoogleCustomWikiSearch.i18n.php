@@ -20,9 +20,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'googlecustomwikisearch' => 'Used as name of the special page in [[Special:SpecialPages]].
-
-Also used as page title in Special:GoogleCustomWikiSearch.',
+	'googlecustomwikisearch' => '{{doc-special|GoogleCustomWikiSearch}}',
 	'gcws-desc' => '{{desc|name=Google Custom Wiki Search|url=http://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch}}',
 );
 
@@ -143,7 +141,7 @@ $messages['pms'] = array(
  */
 $messages['roa-tara'] = array(
 	'googlecustomwikisearch' => 'Ricerche Personalizzate de Google pe le Uicchi',
-	'gcws-desc' => "Permette l'indegrazione de MediaUicchi cu 'a Ricerche Personalizzate de Google o 'a Ricerche sus a le Site de Google.",
+	'gcws-desc' => "Permette l'indegrazione cu 'a Ricerche Personalizzate de Google o 'a Ricerche sus a le Site de Google.",
 );
 
 /** Russian (русский)
