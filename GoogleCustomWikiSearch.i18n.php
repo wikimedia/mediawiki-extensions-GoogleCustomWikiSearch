@@ -124,7 +124,7 @@ $messages['mk'] = array(
  */
 $messages['nl'] = array(
 	'googlecustomwikisearch' => "Google Aangepast zoeken voor wiki's",
-	'gcws-desc' => 'Maakt het mogelijk te integreren met Google Aangepast zoeken of Google Site Search',
+	'gcws-desc' => 'Maakt het mogelijk te integreren met Google Aangepast zoeken of Google Site Search', # Fuzzy
 );
 
 /** Piedmontese (Piemontèis)
