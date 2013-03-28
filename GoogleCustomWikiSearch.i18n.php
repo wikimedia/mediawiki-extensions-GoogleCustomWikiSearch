@@ -85,7 +85,7 @@ $messages['hsb'] = array(
  */
 $messages['it'] = array(
 	'googlecustomwikisearch' => 'Ricerca personalizzata tramite Google',
-	'gcws-desc' => "Permette l'integrazione di MediaWiki con Google Custom Search o Google Site Search.",
+	'gcws-desc' => "Permette l'integrazione con Google Custom Search o Google Site Search",
 );
 
 /** Japanese (日本語)
