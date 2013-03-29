@@ -37,7 +37,7 @@ $messages['ar'] = array(
  */
 $messages['ast'] = array(
 	'googlecustomwikisearch' => 'Gueta wiki personalizada de Google',
-	'gcws-desc' => 'Permite la integración de MediaWiki cola gueta personalizada de Google o cola gueta de sitios de Google.',
+	'gcws-desc' => 'Permite la integración cola Gueta personalizada de Google o cola Gueta de sitios de Google.',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
