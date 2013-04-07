@@ -151,6 +151,14 @@ $messages['ru'] = array(
 	'gcws-desc' => 'Позволяет интегрировать MediaWiki с Google Custom Search или Google Site Search.',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'googlecustomwikisearch' => 'Googles anpassade wikisökning',
+	'gcws-desc' => 'Integrerar med Google Custom Search eller Google Site Search',
+);
+
 /** Ukrainian (українська)
  * @author Ата
  */
