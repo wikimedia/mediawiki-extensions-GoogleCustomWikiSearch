@@ -109,6 +109,7 @@ $messages['ko'] = array(
  */
 $messages['lb'] = array(
 	'googlecustomwikisearch' => 'Benotzerdefinéiert Google-Wiki-Sichfonctioun',
+	'gcws-desc' => "Erlaabt d'Integratioun mat der benotzerdefinéierter Google-sich oder der Google-Websitesich",
 );
 
 /** Macedonian (македонски)
