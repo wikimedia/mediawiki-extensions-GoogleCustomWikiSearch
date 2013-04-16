@@ -101,7 +101,7 @@ $messages['ja'] = array(
  */
 $messages['ko'] = array(
 	'googlecustomwikisearch' => 'Google 맞춤 위키 검색',
-	'gcws-desc' => 'Google 맞춤 검색이나 Google 사이트 검색을 미디어위키에 통합하는 것을 허용',
+	'gcws-desc' => 'Google 맞춤 검색이나 Google 사이트 검색을 통합할 수 있습니다',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
