@@ -165,7 +165,7 @@ $messages['sv'] = array(
  */
 $messages['uk'] = array(
 	'googlecustomwikisearch' => 'Користувацький вікіпошук Google',
-	'gcws-desc' => 'Дозволяє інтеграцію MediaWiki з користувацьким пошуком Google або Google Site Search.',
+	'gcws-desc' => 'Дозволяє інтеграцію з користувацьким пошуком Google або Google Site Search',
 );
 
 /** Simplified Chinese (中文（简体）‎)
