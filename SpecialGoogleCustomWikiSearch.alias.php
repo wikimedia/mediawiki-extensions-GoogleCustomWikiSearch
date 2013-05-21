@@ -28,6 +28,11 @@ $specialPageAliases['ko'] = array(
 	'GoogleCustomWikiSearch' => array( '구글맞춤위키검색', 'Google맞춤위키검색' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'GoogleCustomWikiSearch' => array( 'Benotzerdefinéiert_Google_Sich_op_der_Wiki' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'GoogleCustomWikiSearch' => array( 'ВикиПребарувањеСоGoogle' ),

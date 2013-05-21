@@ -104,6 +104,14 @@ $messages['ko'] = array(
 	'gcws-desc' => 'Google 맞춤 검색이나 Google 사이트 검색을 통합할 수 있습니다',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'googlecustomwikisearch' => 'Söhke em Wiki övver <i lang=en">Google</i>',
+	'gcws-desc' => 'Määt et Zusammewerke met dem Söhke övver <i lang=en">Google</i> möjjelesch, dem vum Aanwänder faßjelaate Söhke, un dem Söhke en ener Web_ßait.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
