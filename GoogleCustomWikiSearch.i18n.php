@@ -128,6 +128,14 @@ $messages['mk'] = array(
 	'gcws-desc' => 'Ја внесува можноста за прилагодено пребарување со Google (Custom Search и Site Search)',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'googlecustomwikisearch' => 'Google Custom Wiki Search',
+	'gcws-desc' => 'Membolehkan integrasi dengan Google Custom Search atau Google Site Search',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
