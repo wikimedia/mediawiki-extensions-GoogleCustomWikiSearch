@@ -29,7 +29,7 @@ $messages['qqq'] = array(
  */
 $messages['ar'] = array(
 	'googlecustomwikisearch' => 'بحث جوجل المخصص للويكي',
-	'gcws-desc' => 'يسمح للميدياويكي بالتكامل مع بحث جوجل المخصص أو بحث جوجل للمواقع',
+	'gcws-desc' => 'يسمح للميدياويكي بالتكامل مع بحث جوجل المخصص أو بحث جوجل للمواقع', # Fuzzy
 );
 
 /** Asturian (asturianu)
@@ -45,7 +45,7 @@ $messages['ast'] = array(
  */
 $messages['be-tarask'] = array(
 	'googlecustomwikisearch' => 'Google Custom Wiki Search',
-	'gcws-desc' => 'Інтэграцыя Google Custom Search або Google Site Search у MediaWiki.',
+	'gcws-desc' => 'Інтэграцыя Google Custom Search або Google Site Search у MediaWiki.', # Fuzzy
 );
 
 /** German (Deutsch)
@@ -165,7 +165,7 @@ $messages['roa-tara'] = array(
  * @author DCamer
  */
 $messages['ru'] = array(
-	'gcws-desc' => 'Позволяет интегрировать MediaWiki с Google Custom Search или Google Site Search.',
+	'gcws-desc' => 'Позволяет интегрировать MediaWiki с Google Custom Search или Google Site Search.', # Fuzzy
 );
 
 /** Swedish (svenska)
