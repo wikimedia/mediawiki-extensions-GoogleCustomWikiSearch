@@ -144,6 +144,14 @@ $messages['nl'] = array(
 	'gcws-desc' => 'Maakt het mogelijk te integreren met Google Aangepast zoeken of Google Site Search',
 );
 
+/** Polish (polski)
+ * @author Woytecr
+ */
+$messages['pl'] = array(
+	'googlecustomwikisearch' => 'Google Custom Wiki Search',
+	'gcws-desc' => 'Pozwala na integrację z Google Custom Search lub Google Site Search',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
