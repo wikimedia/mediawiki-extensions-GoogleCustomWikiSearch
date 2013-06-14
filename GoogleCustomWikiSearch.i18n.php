@@ -199,3 +199,11 @@ $messages['zh-hans'] = array(
 	'googlecustomwikisearch' => 'Google Custom Wiki Search',
 	'gcws-desc' => '允许与Google Custom Search或Google Site Search集成',
 );
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
+ */
+$messages['zh-hant'] = array(
+	'googlecustomwikisearch' => 'Google自訂維基搜尋',
+	'gcws-desc' => '容許與Google自訂搜尋或Google站點搜尋集成',
+);
