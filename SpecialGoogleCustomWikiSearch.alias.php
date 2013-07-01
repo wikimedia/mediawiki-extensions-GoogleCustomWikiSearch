@@ -18,6 +18,11 @@ $specialPageAliases['de'] = array(
 	'GoogleCustomWikiSearch' => array( 'Benutzerdefinierte_Google-Wikisuche' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'GoogleCustomWikiSearch' => array( 'GoogleÇınaWikiCıgeyrayış' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'GoogleCustomWikiSearch' => array( 'Googleカスタムウィキ検索' ),
