@@ -43,6 +43,11 @@ $specialPageAliases['mk'] = array(
 	'GoogleCustomWikiSearch' => array( 'ВикиПребарувањеСоGoogle' ),
 );
 
+/** Low Saxon (Netherlands) (Nedersaksies) */
+$specialPageAliases['nds-nl'] = array(
+	'GoogleCustomWikiSearch' => array( 'Google_an-epast_wiki_zeuken' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'GoogleCustomWikiSearch' => array( 'GoogleAangepastWikizoeken' ),
