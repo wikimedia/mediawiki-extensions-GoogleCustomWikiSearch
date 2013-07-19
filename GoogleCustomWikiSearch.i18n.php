@@ -48,6 +48,14 @@ $messages['be-tarask'] = array(
 	'gcws-desc' => 'Інтэграцыя Google Custom Search або Google Site Search у MediaWiki.', # Fuzzy
 );
 
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ */
+$messages['bn'] = array(
+	'googlecustomwikisearch' => 'গুগল কাস্টম উইকি অনুসন্ধান',
+	'gcws-desc' => 'গুগল কাস্টম অনুসন্ধান বা গুগল সাইট অনুসন্ধানের সাথে ইন্টিগ্রেশন অনুমতি',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
