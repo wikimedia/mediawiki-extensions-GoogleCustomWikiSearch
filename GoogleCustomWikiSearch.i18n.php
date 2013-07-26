@@ -179,9 +179,10 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author DCamer
+ * @author KPu3uC B Poccuu
  */
 $messages['ru'] = array(
-	'gcws-desc' => 'Позволяет интегрировать MediaWiki с Google Custom Search или Google Site Search.', # Fuzzy
+	'gcws-desc' => 'Позволяет интеграцию с Google Custom Search или Google Site Search.',
 );
 
 /** Swedish (svenska)
