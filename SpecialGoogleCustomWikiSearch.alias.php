@@ -28,6 +28,11 @@ $specialPageAliases['diq'] = array(
 	'GoogleCustomWikiSearch' => array( 'GoogleÇınaWikiCıgeyrayış' ),
 );
 
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'GoogleCustomWikiSearch' => array( 'ΠροσαρμοσμένηΑναζήτησηΣτοWikiΑπόGoogle' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'GoogleCustomWikiSearch' => array( 'جستجوی_سفارسی_ویکی_گوگل' ),
