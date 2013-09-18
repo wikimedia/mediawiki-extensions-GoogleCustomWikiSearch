@@ -169,6 +169,13 @@ $messages['pms'] = array(
 	'gcws-desc' => "A përmët l'integrassion con l'arserca përsonalisà ëd Google o l'arserca ëd sit ëd Google.",
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'googlecustomwikisearch' => 'Pesquisa wiki personalizada do Google',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
