@@ -88,6 +88,14 @@ $messages['hsb'] = array(
 	'gcws-desc' => 'Zmóžnja integraciju z wikipytanjom Google abo ze sydłowym pytanjom Google',
 );
 
+/** Interlingua (interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'googlecustomwikisearch' => 'Recerca wiki personalisate de Google',
+	'gcws-desc' => 'Permitte le integration con Google Custom Search o Google Site Search',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
