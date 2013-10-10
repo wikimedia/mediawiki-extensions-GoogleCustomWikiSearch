@@ -195,9 +195,11 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author DCamer
  * @author KPu3uC B Poccuu
+ * @author Okras
  */
 $messages['ru'] = array(
-	'gcws-desc' => 'Позволяет интеграцию с Google Custom Search или Google Site Search.',
+	'googlecustomwikisearch' => 'Пользовательский поиск Google в вики',
+	'gcws-desc' => 'Позволяет интегрировать Google Custom Search или Google Site Search.',
 );
 
 /** Swedish (svenska)
