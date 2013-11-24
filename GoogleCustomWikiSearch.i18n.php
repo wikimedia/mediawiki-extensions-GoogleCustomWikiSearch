@@ -64,6 +64,14 @@ $messages['de'] = array(
 	'gcws-desc' => 'Ermöglicht die Integration mit der benutzerdefinierten Google-Suche oder der Google-Websitesuche',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'googlecustomwikisearch' => 'Búsqueda personalizada de Google en el wiki',
+	'gcws-desc' => 'Integra la búsqueda por sitio o personalizada de Google',
+);
+
 /** French (français)
  * @author Gomoko
  */
