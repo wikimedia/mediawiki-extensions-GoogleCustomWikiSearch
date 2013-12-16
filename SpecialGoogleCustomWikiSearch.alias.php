@@ -14,6 +14,11 @@ $specialPageAliases['en'] = array(
 	'GoogleCustomWikiSearch' => array( 'GoogleCustomWikiSearch', 'Google Custom Wiki Search' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصص_للويكي' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'GoogleCustomWikiSearch' => array( '谷歌自定義維基尋討' ),
