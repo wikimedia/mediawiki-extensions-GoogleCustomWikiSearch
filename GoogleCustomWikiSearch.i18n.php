@@ -72,6 +72,14 @@ $messages['es'] = array(
 	'gcws-desc' => 'Integra la búsqueda por sitio o personalizada de Google',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'googlecustomwikisearch' => 'جستجوی گوگل کاستم ویکی',
+	'gcws-desc' => 'اجازهٔ ادغام با جستجوی سفارشی گوگل یا جستجوی سایت گوگل',
+);
+
 /** French (français)
  * @author Gomoko
  */
