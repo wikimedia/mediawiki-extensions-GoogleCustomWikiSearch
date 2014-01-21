@@ -41,11 +41,12 @@ $messages['ast'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Renessaince
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'googlecustomwikisearch' => 'Google Custom Wiki Search',
-	'gcws-desc' => 'Інтэграцыя Google Custom Search або Google Site Search у MediaWiki.', # Fuzzy
+	'gcws-desc' => 'Дазваляе інтэграцыю Google Custom Search або Google Site Search',
 );
 
 /** Bengali (বাংলা)
