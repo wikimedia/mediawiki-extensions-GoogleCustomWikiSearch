@@ -19,6 +19,11 @@ $specialPageAliases['ar'] = array(
 	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصص_للويكي' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصوص_للويكى' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'GoogleCustomWikiSearch' => array( '谷歌自定義維基尋討' ),
@@ -76,10 +81,10 @@ $specialPageAliases['nl'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google定制搜索' ),
+	'GoogleCustomWikiSearch' => array( 'Google定制wiki搜索', 'Google定制维基搜索' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google自訂搜尋' ),
+	'GoogleCustomWikiSearch' => array( 'Google自訂wiki搜尋', 'Google自訂維基搜尋' ),
 );
