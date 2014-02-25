@@ -97,6 +97,14 @@ $messages['gl'] = array(
 	'gcws-desc' => 'Permite a integración coa procura personalizada do Google ou coa procura de sitios do Google',
 );
 
+/** Hebrew (עברית)
+ * @author Yona b
+ */
+$messages['he'] = array(
+	'googlecustomwikisearch' => 'חיפוש גוגל מותאם אישית בוויקי',
+	'gcws-desc' => 'מאפשר שילוב עם חיפוש גוגל מותאם אישית או חיפוש אתרים של גוגל',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
