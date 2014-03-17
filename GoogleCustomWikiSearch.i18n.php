@@ -227,6 +227,14 @@ $messages['ru'] = array(
 	'gcws-desc' => 'Позволяет интегрировать Google Custom Search или Google Site Search.',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'googlecustomwikisearch' => 'Google Custom Wiki Rake',
+	'gcws-desc' => 'Permits integration wi Google Custym Rake or Google Steid Rake',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
