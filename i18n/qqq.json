@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ike Hecht",
+            "Shirayuki"
+        ]
+    },
+    "googlecustomwikisearch": "{{doc-special|GoogleCustomWikiSearch}}",
+    "gcws-desc": "{{desc|name=Google Custom Wiki Search|url=http://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch}}"
+}

@@ -10,13 +10,14 @@ $wgExtensionCredits['specialpage'][] = array(
         'author' => 'Ike Hecht for [http://wikiworks.com/ WikiWorks]',
         'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch',
         'descriptionmsg' => 'gcws-desc',
-        'version' => '0.1 alpha',
+        'version' => '0.2.0 alpha',
 );
 
 $dir = __DIR__ . '/';
 
 $wgAutoloadClasses['SpecialGoogleCustomWikiSearch'] = $dir . 'SpecialGoogleCustomWikiSearch.php';
 $wgExtensionMessagesFiles['GoogleCustomWikiSearchAlias'] = $dir . 'SpecialGoogleCustomWikiSearch.alias.php';
+$wgMessagesDirs['GoogleCustomWikiSearch'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['GoogleCustomWikiSearch'] = $dir . 'GoogleCustomWikiSearch.i18n.php';
 $wgSpecialPages['GoogleCustomWikiSearch'] = 'SpecialGoogleCustomWikiSearch';
 $wgSpecialPageGroups['GoogleCustomWikiSearch'] = 'redirects';
