@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "googlecustomwikisearch": "Procura wiki personalizada do Google",
-    "gcws-desc": "Permite a integración coa procura personalizada do Google ou coa procura de sitios do Google"
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"googlecustomwikisearch": "Procura wiki personalizada do Google",
+	"gcws-desc": "Permite a integración coa procura personalizada do Google ou coa procura de sitios do Google"
 }

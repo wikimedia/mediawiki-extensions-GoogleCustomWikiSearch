@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yfdyh000"
-        ]
-    },
-    "googlecustomwikisearch": "Google Custom Wiki Search",
-    "gcws-desc": "允许与Google Custom Search或Google Site Search集成"
+	"@metadata": {
+		"authors": [
+			"Yfdyh000"
+		]
+	},
+	"googlecustomwikisearch": "Google Custom Wiki Search",
+	"gcws-desc": "允许与Google Custom Search或Google Site Search集成"
 }

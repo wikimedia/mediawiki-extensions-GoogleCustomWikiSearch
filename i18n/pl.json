@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Woytecr"
-        ]
-    },
-    "googlecustomwikisearch": "Google Custom Wiki Search",
-    "gcws-desc": "Pozwala na integrację z Google Custom Search lub Google Site Search"
+	"@metadata": {
+		"authors": [
+			"Woytecr"
+		]
+	},
+	"googlecustomwikisearch": "Google Custom Wiki Search",
+	"gcws-desc": "Pozwala na integrację z Google Custom Search lub Google Site Search"
 }

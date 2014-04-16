@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Metalhead64"
-        ]
-    },
-    "googlecustomwikisearch": "Benutzerdefinierte Google-Wikisuche",
-    "gcws-desc": "Ermöglicht die Integration mit der benutzerdefinierten Google-Suche oder der Google-Websitesuche"
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"googlecustomwikisearch": "Benutzerdefinierte Google-Wikisuche",
+	"gcws-desc": "Ermöglicht die Integration mit der benutzerdefinierten Google-Suche oder der Google-Websitesuche"
 }
