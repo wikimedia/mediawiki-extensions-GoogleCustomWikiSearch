@@ -56,7 +56,7 @@ $specialPageAliases['ja'] = array(
 
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
-	'GoogleCustomWikiSearch' => array( '구글맞춤위키검색', 'Google맞춤위키검색' ),
+	'GoogleCustomWikiSearch' => array( 'Google맞춤위키검색', '구글맞춤위키검색' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
