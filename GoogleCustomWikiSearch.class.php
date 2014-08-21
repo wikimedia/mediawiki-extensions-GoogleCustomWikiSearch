@@ -1,6 +1,6 @@
 <?php
 
-class GoogleCustomWikiSearch {
+class GoogleCustomWikiSearch extends ContextSource {
 	/**
 	 * The term to search for
 	 *
@@ -14,14 +14,6 @@ class GoogleCustomWikiSearch {
 	 * @var string
 	 */
 	private $id;
-
-	/**
-	 * Internationalisation code to be passed to Google.
-	 *
-	 * @todo Handle special languages like Simple English
-	 * @var Language
-	 */
-	private $lang;
 
 	/**
 	 * Name of a Google search theme
@@ -51,23 +43,12 @@ class GoogleCustomWikiSearch {
 	 */
 	private $isOnSpecialSearch = false;
 
-	/**
-	 * To be used for rendering the search
-	 *
-	 * @var OutputPage
-	 */
-	private $out;
-
 	public function getTerm() {
 		return $this->term;
 	}
 
 	public function getId() {
 		return $this->id;
-	}
-
-	public function getLang() {
-		return $this->lang;
 	}
 
 	public function getTheme() {
@@ -86,20 +67,12 @@ class GoogleCustomWikiSearch {
 		return $this->isOnSpecialSearch;
 	}
 
-	public function getOut() {
-		return $this->out;
-	}
-
 	public function setTerm( $term ) {
 		return wfSetVar( $this->term, $term );
 	}
 
 	public function setId( $id ) {
 		return wfSetVar( $this->id, $id );
-	}
-
-	public function setLang( Language $lang ) {
-		return wfSetVar( $this->lang, $lang );
 	}
 
 	public function setTheme( $theme ) {
@@ -118,85 +91,28 @@ class GoogleCustomWikiSearch {
 		return wfSetVar( $this->isOnSpecialSearch, $isOnSpecialSearch );
 	}
 
-	public function setOut( OutputPage $out ) {
-		return wfSetVar( $this->out, $out );
-	}
-
 	/**
-	 * Set up all the inclusions needed for the search
-	 * Inspired by ParserOptions
-	 *
-	 * @global OutputPage $wgOut
-	 * @param OutputPage $out
-	 * @param Language $lang
-	 */
-	public function __construct( OutputPage $out = null, Language $lang = null ) {
-		if ( $out === null ) {
-			global $wgOut;
-			if ( $wgOut === null ) {
-				$out = new OutputPage;
-			} else {
-				$out = $wgOut;
-			}
-		}
-		if ( $lang === null ) {
-			$lang = $out->getLanguage();
-		}
-
-		$this->initializeFromOutputPageAndLanguage( $out, $lang );
-	}
-
-	/**
-	 * Get a GoogleCustomWikiSearch object from a IContextSource object
-	 *
-	 * @param IContextSource $context
-	 * @return GoogleCustomWikiSearch
-	 */
-	public static function newFromContext( IContextSource $context ) {
-		return new GoogleCustomWikiSearch( $context->getOutput(), $context->getLanguage() );
-	}
-
-	/**
-	 * Get a GoogleCustomWikiSearch object from a given OutputPage
-	 *
-	 * @param OutputPage $out
-	 * @return GoogleCustomWikiSearch
-	 */
-	public static function newFromOutputPage( OutputPage $out ) {
-		return new GoogleCustomWikiSearch( $out, $out->getLanguage() );
-	}
-
-	/**
-	 * Get a GoogleCustomWikiSearch object from a given OutputPage and Language
-	 *
-	 * @param OutputPage $out
-	 * @param Language $lang
-	 * @return GoogleCustomWikiSearch
-	 */
-	public static function newFromOutputPageAndLanguage( OutputPage $out, Language $lang ) {
-		return new GoogleCustomWikiSearch( $out, $lang );
-	}
-
-	/**
-	 * Set up the parameters to be inserted into the js
+	 * Set up all the parameters needed for the search
 	 *
 	 * @global string $wgGoogleCustomWikiSearchId
 	 * @global string $wgGoogleCustomWikiSearchTheme
 	 * @global string $wgGoogleCustomWikiSearchOptions
 	 * @global int $wgGoogleCustomWikiSearchCodeVersion
 	 */
-	private function initializeFromOutputPageAndLanguage( OutputPage $out, Language $lang ) {
+	public function __construct( IContextSource $context = null ) {
 		global $wgGoogleCustomWikiSearchId, $wgGoogleCustomWikiSearchTheme,
 		$wgGoogleCustomWikiSearchOptions, $wgGoogleCustomWikiSearchCodeVersion;
 
-		$this->out = $out;
-		$this->lang = $lang;
+		if ( $context ) {
+			$this->setContext( $context );
+		}
+
 		$this->id = $wgGoogleCustomWikiSearchId;
 		$this->theme = $wgGoogleCustomWikiSearchTheme;
 		$this->options = $wgGoogleCustomWikiSearchOptions == '' ? $this->getDefaultOptions() :
 			$wgGoogleCustomWikiSearchOptions;
 		$this->codeVersion = $wgGoogleCustomWikiSearchCodeVersion;
-		if ( $out->getTitle()->equals( SpecialPage::getTitleFor( 'Search' ) ) ) {
+		if ( $this->getOutput()->getTitle()->equals( SpecialPage::getTitleFor( 'Search' ) ) ) {
 			$this->isOnSpecialSearch = true;
 		}
 	}
@@ -207,7 +123,7 @@ class GoogleCustomWikiSearch {
 	 * @return string
 	 */
 	private function getDefaultOptions() {
-		return "var customSearchControl = new google.search.CustomSearchControl( '$this->id' );";
+		return "var customSearchControl = new google.search.CustomSearchControl( '{$this->getId()}' );";
 	}
 
 	/**
@@ -227,13 +143,13 @@ class GoogleCustomWikiSearch {
 	 */
 	private function getScriptVersion1() {
 		return <<<END
-	google.load('search', '1', {language : '{$this->lang->getCode()}', style : google.loader.themes.$this->theme});
+	google.load('search', '1', {language : '{$this->getLanguage()->getCode()}', style : google.loader.themes.{$this->getTheme()}});
 	google.setOnLoadCallback(function() {
 		var options = new google.search.DrawOptions();
 		{$this->getSearchDisplayOption()}
-		$this->options
+		{$this->getOptions()}
 		customSearchControl.draw('cse', options);
-		customSearchControl.execute("$this->term");
+		customSearchControl.execute("{$this->getTerm()}");
 	}, true);
 END;
 	}
@@ -248,7 +164,7 @@ function gcseCallback() {
 		return google.setOnLoadCallback(gcseCallback, true);
 	google.search.cse.element.render({gname:'gcws', div:'cse', {$this->getSearchDisplayOption()}});
 	var element = google.search.cse.element.getElement('gcws');
-	element.execute('$this->term');
+	element.execute('{$this->getTerm()}');
 };
 window.__gcse = {
 	parsetags: 'explicit',
@@ -256,11 +172,11 @@ window.__gcse = {
 };
 
 (function() {
-	var cx = '$this->id';
+	var cx = '{$this->getId()}';
 	var gcse = document.createElement('script'); gcse.type = 'text/javascript';
 	gcse.async = true;
 	gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
-		'//www.google.com/cse/cse.js?theme={$this->theme}&language={$this->lang->getCode()}&cx=' + cx;
+		'//www.google.com/cse/cse.js?theme={$this->getTheme()}&language={$this->getLanguage()->getCode()}&cx=' + cx;
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 })();
 END;
@@ -281,10 +197,10 @@ END;
 	 * @param string $term
 	 */
 	public function doSearch( $term ) {
-		$this->term = $term;
-		$out = $this->out;
+		$this->setTerm( $term );
+		$out = $this->getOutput();
 		$out->addHtml( $this->getHtml() );
-		if ( $this->codeVersion == 1 ) {
+		if ( $this->getCodeVersion() == 1 ) {
 			$out->addScriptFile( $this->getScriptFileName() );
 			$out->addInlineScript( $this->getScriptVersion1() );
 		} else {
@@ -317,10 +233,10 @@ END;
 	 * @return string
 	 */
 	protected function getSearchDisplayOption() {
-		if ( !$this->isOnSpecialSearch ) {
+		if ( !$this->getIsOnSpecialSearch() ) {
 			return '';
 		}
-		if ( $this->codeVersion == 1 ) {
+		if ( $this->getCodeVersion() == 1 ) {
 			return 'options.enableSearchResultsOnly();';
 		} else {
 			return "tag:'searchresults-only'";

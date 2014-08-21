@@ -33,7 +33,7 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 
 		$this->setupPage( $term );
 
-		$googleCustomWikiSearch = GoogleCustomWikiSearch::newFromContext( $this->getContext() );
+		$googleCustomWikiSearch = new GoogleCustomWikiSearch( $this->getContext() );
 		$googleCustomWikiSearch->doSearch( $term );
 
 		$this->getOutput()->parserOptions()->setEditSection( false );
