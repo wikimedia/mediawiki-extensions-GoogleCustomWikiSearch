@@ -1,5 +1,7 @@
 {
-    "require-dev": {
-        "squizlabs/php_codesniffer": "1.*"
-    }
+	"name": "mediawiki/googlecustomwikisearch",
+	"description": "Allow MediaWiki integration with Google Custom Search",
+	"require-dev": {
+		"squizlabs/php_codesniffer": "1.*"
+	}
 }
