@@ -86,5 +86,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google 自訂 Wiki 搜尋', 'Google 自訂維基搜尋' ),
+	'GoogleCustomWikiSearch' => array( 'Google_自訂_Wiki_搜尋', 'Google_自訂維基搜尋' ),
 );
