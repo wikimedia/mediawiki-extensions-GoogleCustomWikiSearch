@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصوص_للويكى' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'GoogleCustomWikiSearch' => array( 'سپاریشین_گشتین_بئ_ویکی_گوگل_تا' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'GoogleCustomWikiSearch' => array( '谷歌自定義維基尋討' ),
