@@ -10,7 +10,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ike Hecht for [http://wikiworks.com/ WikiWorks]',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch',
 	'descriptionmsg' => 'gcws-desc',
-	'version' => '0.4.0 beta',
+	'version' => '0.5.0 beta',
 );
 
 $dir = __DIR__ . '/';

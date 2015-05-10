@@ -47,6 +47,10 @@ class GoogleCustomWikiSearch extends ContextSource {
 		return $this->term;
 	}
 
+	public function getTermEncoded() {
+		return FormatJson::encode( $this->getTerm() );
+	}
+
 	public function getId() {
 		return $this->id;
 	}
@@ -142,6 +146,7 @@ class GoogleCustomWikiSearch extends ContextSource {
 	 * @return string
 	 */
 	private function getScriptVersion1() {
+		$term = $this->getTermEncoded();
 		return <<<END
 	google.load('search', '1', {language : '{$this->getLanguage()->getCode()}', style : google.loader.themes.{$this->getTheme()}});
 	google.setOnLoadCallback(function() {
@@ -149,7 +154,7 @@ class GoogleCustomWikiSearch extends ContextSource {
 		{$this->getSearchDisplayOption()}
 		{$this->getOptions()}
 		customSearchControl.draw('cse', options);
-		customSearchControl.execute("{$this->getTerm()}");
+		customSearchControl.execute( {$term} );
 	}, true);
 END;
 	}
@@ -158,13 +163,14 @@ END;
 	 * @return string
 	 */
 	private function getScriptVersion2() {
+		$term = $this->getTermEncoded();
 		return <<<END
 function gcseCallback() {
 	if (document.readyState != 'complete')
 		return google.setOnLoadCallback(gcseCallback, true);
 	google.search.cse.element.render({gname:'gcws', div:'cse', {$this->getSearchDisplayOption()}});
 	var element = google.search.cse.element.getElement('gcws');
-	element.execute('{$this->getTerm()}');
+	element.execute( {$term} );
 };
 window.__gcse = {
 	parsetags: 'explicit',
