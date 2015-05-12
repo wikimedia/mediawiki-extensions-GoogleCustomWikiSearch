@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصص_للويكي' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصوص_للويكى' ),
 );
