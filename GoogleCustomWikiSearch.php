@@ -25,7 +25,6 @@ $wgMessagesDirs['GoogleCustomWikiSearch'] = $dir . 'i18n';
 $wgExtensionMessagesFiles['GoogleCustomWikiSearch'] = $dir . 'GoogleCustomWikiSearch.i18n.php';
 
 $wgSpecialPages['GoogleCustomWikiSearch'] = 'SpecialGoogleCustomWikiSearch';
-$wgSpecialPageGroups['GoogleCustomWikiSearch'] = 'redirects';
 
 # Possibly replace the standard search functionality with this extension
 $wgHooks['SpecialSearchSetupEngine'][] = 'GoogleCustomWikiSearchHooks::onSpecialSearchSetupEngine';
