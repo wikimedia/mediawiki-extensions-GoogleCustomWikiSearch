@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Walter Klosse"
+			"Walter Klosse",
+			"Dvorapa"
 		]
 	},
-	"googlecustomwikisearch": "Přizpůsobené vyhledávání Googlu ve Wiki",
+	"googlecustomwikisearch": "Přizpůsobené vyhledávání Googlem ve Wiki",
 	"gcws-desc": "Umožňuje integraci s Google Custom Search nebo Google Site Search"
 }
