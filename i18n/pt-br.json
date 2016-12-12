@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cainamarques"
+			"Cainamarques",
+			"!Silent"
 		]
 	},
-	"googlecustomwikisearch": "Pesquisa wiki personalizada do Google"
+	"googlecustomwikisearch": "Pesquisa wiki personalizada do Google",
+	"gcws-desc": "Permite a integração com o Google Custom Search ou com o Google Site Search"
 }
