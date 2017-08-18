@@ -4,6 +4,5 @@
 *.kate-swp
 .*.swp
 composer.phar
-vendor/*
 vendor/
 composer.lock
