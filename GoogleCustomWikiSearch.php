@@ -22,7 +22,6 @@ $wgAutoloadClasses['SpecialGoogleCustomWikiSearch'] = $dir . 'SpecialGoogleCusto
 $wgExtensionMessagesFiles['GoogleCustomWikiSearchAlias'] = $dir .
 	'SpecialGoogleCustomWikiSearch.alias.php';
 $wgMessagesDirs['GoogleCustomWikiSearch'] = $dir . 'i18n';
-$wgExtensionMessagesFiles['GoogleCustomWikiSearch'] = $dir . 'GoogleCustomWikiSearch.i18n.php';
 
 $wgSpecialPages['GoogleCustomWikiSearch'] = 'SpecialGoogleCustomWikiSearch';
 
