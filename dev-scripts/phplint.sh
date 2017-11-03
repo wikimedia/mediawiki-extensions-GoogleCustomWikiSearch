@@ -1,3 +1,4 @@
+#!/bin/bash
 command -v vendor/bin/phpcs >/dev/null 2>&1 || { echo >&2 "phpcs required but it's not installed. Aborting. Run 'make phpcheck'"; exit 1; }
 
 if [ -z ${MEDIAWIKI_CODESNIFFER_CONFIG_DIR+x} ]
