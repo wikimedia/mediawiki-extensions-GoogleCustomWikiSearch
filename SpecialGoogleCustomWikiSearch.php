@@ -29,15 +29,12 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 	 * @param string $term
 	 */
 	public function showResults( $term ) {
-		wfProfileIn( __METHOD__ );
-
 		$this->setupPage( $term );
 
 		$googleCustomWikiSearch = new GoogleCustomWikiSearch( $this->getContext() );
 		$googleCustomWikiSearch->doSearch( $term );
 
 		$this->getOutput()->parserOptions()->setEditSection( false );
-		wfProfileOut( __METHOD__ );
 	}
 
 	/**
