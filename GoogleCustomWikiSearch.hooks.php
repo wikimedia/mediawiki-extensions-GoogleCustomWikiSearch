@@ -44,7 +44,7 @@ class GoogleCustomWikiSearchHooks {
 		$out = $special->getOutput();
 		$out->addModuleStyles( 'ext.googleCustomWikiSearch' );
 		$out->addHTML( Html::element( 'h1', array( 'id' => 'gcws_header' ),
-				$special->msg( 'googlecustomwikisearch' )->escaped() ) );
+				$special->msg( 'googlecustomwikisearch' )->text() ) );
 
 		// Set up the Google search
 		$googleCustomWikiSearch = new GoogleCustomWikiSearch( $special->getContext() );
