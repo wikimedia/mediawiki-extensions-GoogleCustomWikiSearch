@@ -1,0 +1,69 @@
+{
+	"name": "GoogleCustomWikiSearch",
+	"version": "0.5.0 beta",
+	"author": "Ike Hecht for [http://wikiworks.com/ WikiWorks]",
+	"url": "https://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch",
+	"descriptionmsg": "gcws-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"GoogleCustomWikiSearch": "SpecialGoogleCustomWikiSearch"
+	},
+	"MessagesDirs": {
+		"GoogleCustomWikiSearch": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"GoogleCustomWikiSearchAlias": "SpecialGoogleCustomWikiSearch.alias.php"
+	},
+	"AutoloadClasses": {
+		"GoogleCustomWikiSearch": "GoogleCustomWikiSearch.class.php",
+		"GoogleCustomWikiSearchHooks": "GoogleCustomWikiSearch.hooks.php",
+		"SpecialGoogleCustomWikiSearch": "SpecialGoogleCustomWikiSearch.php"
+	},
+	"ResourceModules": {
+		"ext.googleCustomWikiSearch": {
+			"styles": [
+				"ext.googleCustomWikiSearch.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "GoogleCustomWikiSearch"
+	},
+	"Hooks": {
+		"SpecialSearchSetupEngine": "GoogleCustomWikiSearchHooks::onSpecialSearchSetupEngine",
+		"SpecialPageAfterExecute": "GoogleCustomWikiSearchHooks::onSpecialPageAfterExecute"
+	},
+	"config": {
+		"GoogleCustomWikiSearchReplaceSearch": {
+			"description": "Configuration value for replacing standard search. Default is false. When true, standard search will be replaced.",
+			"value": false
+		},
+		"GoogleCustomWikiSearchAppendToSearch": {
+			"description": "Append to standard search results? Only makes sense if $wgGoogleCustomWikiSearchReplaceSearch is false.",
+			"value": false
+		},
+		"GoogleCustomWikiSearchId": {
+			"description": "Google Custom Search ID - requires account with Google. Note that if this is left blank (not set in LocalSettings), the result will be a site search.",
+			"value": ""
+		},
+		"GoogleCustomWikiSearchOptions": {
+			"description": "The custom search options may leave out customSearchControl.draw, though options will only display then if the variable is named 'options'. If this is set, $wgGoogleCustomWikiSearchId is ignored.",
+			"value": ""
+		},
+		"GoogleCustomWikiSearchTheme": {
+			"description": "The search theme which may be overwitten by Control Panel settings in Google script Version 2. Possible values are: 'DEFAULT', 'BUBBLEGUM', 'ESPRESSO', 'GREENSKY', 'MINIMALIST', 'SHINY'.",
+			"value": "V2_DEFAULT"
+		},
+		"GoogleCustomWikiSearchCodeVersion": {
+			"description": "Version of Google's script.",
+			"value": 2
+		}
+	},
+	"manifest_version": 2
+}

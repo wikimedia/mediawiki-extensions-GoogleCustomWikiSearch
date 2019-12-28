@@ -1,41 +1,15 @@
 <?php
-# Alert the user that this is not a valid entry point to MediaWiki
-if ( !defined( 'MEDIAWIKI' ) ) {
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'GoogleCustomWikiSearch' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['GoogleCustomWikiSearch'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['GoogleCustomWikiSearchAlias'] = __DIR__ . '/SpecialGoogleCustomWikiSearch.alias.php';
+	wfWarn(
+		'Deprecated PHP entry point used for the GoogleCustomWikiSearch extension. ' .
+		'Please use wfLoadExtension() instead, ' .
+		'see https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the GoogleCustomWikiSearch extension requires MediaWiki 1.29+' );
 }
-
-$wgExtensionCredits['specialpage'][] = array(
-	'path' => __FILE__,
-	'name' => 'GoogleCustomWikiSearch',
-	'author' => 'Ike Hecht for [http://wikiworks.com/ WikiWorks]',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch',
-	'descriptionmsg' => 'gcws-desc',
-	'version' => '0.5.0 beta',
-);
-
-$dir = __DIR__ . '/';
-
-$wgAutoloadClasses['GoogleCustomWikiSearch'] = $dir . 'GoogleCustomWikiSearch.class.php';
-$wgAutoloadClasses['GoogleCustomWikiSearchHooks'] = $dir . 'GoogleCustomWikiSearch.hooks.php';
-$wgAutoloadClasses['SpecialGoogleCustomWikiSearch'] = $dir . 'SpecialGoogleCustomWikiSearch.php';
-
-$wgExtensionMessagesFiles['GoogleCustomWikiSearchAlias'] = $dir .
-	'SpecialGoogleCustomWikiSearch.alias.php';
-$wgMessagesDirs['GoogleCustomWikiSearch'] = $dir . 'i18n';
-
-$wgSpecialPages['GoogleCustomWikiSearch'] = 'SpecialGoogleCustomWikiSearch';
-
-# Possibly replace the standard search functionality with this extension
-$wgHooks['SpecialSearchSetupEngine'][] = 'GoogleCustomWikiSearchHooks::onSpecialSearchSetupEngine';
-# Or add it to the standard search page
-$wgHooks['SpecialPageAfterExecute'][] = 'GoogleCustomWikiSearchHooks::onSpecialPageAfterExecute';
-
-$wgResourceModules['ext.googleCustomWikiSearch'] = array(
-	'styles' => array( 'ext.googleCustomWikiSearch.css' ),
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'GoogleCustomWikiSearch',
-);
-
-require_once $dir . 'GoogleCustomWikiSearch.settings.php';
-
-unset( $dir );
