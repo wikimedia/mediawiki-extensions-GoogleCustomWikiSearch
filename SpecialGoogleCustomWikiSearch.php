@@ -33,9 +33,6 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 
 		$googleCustomWikiSearch = new GoogleCustomWikiSearch( $this->getContext() );
 		$googleCustomWikiSearch->doSearch( $term );
-
-		// FIXME: Use ParserOutput::getText( [ 'enableSectionEditTokens' => false ] ) instead, but where?
-		$this->getOutput()->parserOptions()->setEditSection( false );
 	}
 
 	/**
