@@ -2,10 +2,10 @@
 	"name": "mediawiki/googlecustomwikisearch",
 	"description": "Allow MediaWiki integration with Google Custom Search",
 	"require-dev": {
-		"squizlabs/php_codesniffer": "1.*",
-		"jakub-onderka/php-parallel-lint": "1.0.0",
-		"jakub-onderka/php-console-highlighter": "0.3.2",
-		"mediawiki/minus-x": "0.3.1"
+		"mediawiki/minus-x": "0.3.1",
+		"php-parallel-lint/php-console-highlighter": "0.3.2",
+		"php-parallel-lint/php-parallel-lint": "1.0.0",
+		"squizlabs/php_codesniffer": "1.*"
 	},
 	"scripts": {
 		"test": [
