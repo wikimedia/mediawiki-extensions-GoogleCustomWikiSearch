@@ -39,7 +39,7 @@ class GoogleCustomWikiSearch extends ContextSource {
 	/**
 	 * Is this output being inserted into Special:Search?
 	 *
-	 * @var Boolean
+	 * @var bool
 	 */
 	private $isOnSpecialSearch = false;
 
@@ -102,6 +102,8 @@ class GoogleCustomWikiSearch extends ContextSource {
 	 * @global string $wgGoogleCustomWikiSearchTheme
 	 * @global string $wgGoogleCustomWikiSearchOptions
 	 * @global int $wgGoogleCustomWikiSearchCodeVersion
+	 *
+	 * @param IContextSource|null $context
 	 */
 	public function __construct( IContextSource $context = null ) {
 		global $wgGoogleCustomWikiSearchId, $wgGoogleCustomWikiSearchTheme,

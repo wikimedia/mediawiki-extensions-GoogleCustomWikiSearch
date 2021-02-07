@@ -6,89 +6,89 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'GoogleCustomWikiSearch' => array( 'GoogleCustomWikiSearch', 'Google Custom Wiki Search' ),
-);
+$specialPageAliases['en'] = [
+	'GoogleCustomWikiSearch' => [ 'GoogleCustomWikiSearch', 'Google Custom Wiki Search' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصص_للويكي' ),
-);
+$specialPageAliases['ar'] = [
+	'GoogleCustomWikiSearch' => [ 'بحث_جوجل_مخصص_للويكي' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'GoogleCustomWikiSearch' => array( 'بحث_جوجل_مخصوص_للويكى' ),
-);
+$specialPageAliases['arz'] = [
+	'GoogleCustomWikiSearch' => [ 'بحث_جوجل_مخصوص_للويكى' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'GoogleCustomWikiSearch' => array( 'سپاریشین_گشتین_بئ_ویکی_گوگل_تا' ),
-);
+$specialPageAliases['bgn'] = [
+	'GoogleCustomWikiSearch' => [ 'سپاریشین_گشتین_بئ_ویکی_گوگل_تا' ],
+];
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
-$specialPageAliases['cdo'] = array(
-	'GoogleCustomWikiSearch' => array( '谷歌自定義維基尋討' ),
-);
+$specialPageAliases['cdo'] = [
+	'GoogleCustomWikiSearch' => [ '谷歌自定義維基尋討' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'GoogleCustomWikiSearch' => array( 'Benutzerdefinierte_Google-Wikisuche' ),
-);
+$specialPageAliases['de'] = [
+	'GoogleCustomWikiSearch' => [ 'Benutzerdefinierte_Google-Wikisuche' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'GoogleCustomWikiSearch' => array( 'GoogleÇınaWikiCıgeyrayış' ),
-);
+$specialPageAliases['diq'] = [
+	'GoogleCustomWikiSearch' => [ 'GoogleÇınaWikiCıgeyrayış' ],
+];
 
 /** Greek (Ελληνικά) */
-$specialPageAliases['el'] = array(
-	'GoogleCustomWikiSearch' => array( 'ΠροσαρμοσμένηΑναζήτησηΣτοWikiΑπόGoogle' ),
-);
+$specialPageAliases['el'] = [
+	'GoogleCustomWikiSearch' => [ 'ΠροσαρμοσμένηΑναζήτησηΣτοWikiΑπόGoogle' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'GoogleCustomWikiSearch' => array( 'جستجوی_سفارسی_ویکی_گوگل' ),
-);
+$specialPageAliases['fa'] = [
+	'GoogleCustomWikiSearch' => [ 'جستجوی_سفارسی_ویکی_گوگل' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'GoogleCustomWikiSearch' => array( 'Googleカスタムウィキ検索' ),
-);
+$specialPageAliases['ja'] = [
+	'GoogleCustomWikiSearch' => [ 'Googleカスタムウィキ検索' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google맞춤위키검색', '구글맞춤위키검색' ),
-);
+$specialPageAliases['ko'] = [
+	'GoogleCustomWikiSearch' => [ 'Google맞춤위키검색', '구글맞춤위키검색' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'GoogleCustomWikiSearch' => array( 'Benotzerdefinéiert_Google_Sich_op_der_Wiki' ),
-);
+$specialPageAliases['lb'] = [
+	'GoogleCustomWikiSearch' => [ 'Benotzerdefinéiert_Google_Sich_op_der_Wiki' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'GoogleCustomWikiSearch' => array( 'ВикиПребарувањеСоGoogle' ),
-);
+$specialPageAliases['mk'] = [
+	'GoogleCustomWikiSearch' => [ 'ВикиПребарувањеСоGoogle' ],
+];
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
-$specialPageAliases['nds-nl'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google_an-epast_wiki_zeuken' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'GoogleCustomWikiSearch' => [ 'Google_an-epast_wiki_zeuken' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'GoogleCustomWikiSearch' => array( 'GoogleAangepastWikizoeken' ),
-);
+$specialPageAliases['nl'] = [
+	'GoogleCustomWikiSearch' => [ 'GoogleAangepastWikizoeken' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google定制wiki搜索', 'Google定制维基搜索' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'GoogleCustomWikiSearch' => [ 'Google定制wiki搜索', 'Google定制维基搜索' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'GoogleCustomWikiSearch' => array( 'Google_自訂_Wiki_搜尋', 'Google_自訂維基搜尋' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'GoogleCustomWikiSearch' => [ 'Google_自訂_Wiki_搜尋', 'Google_自訂維基搜尋' ],
+];

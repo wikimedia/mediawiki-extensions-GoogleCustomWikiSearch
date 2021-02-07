@@ -8,7 +8,7 @@ class GoogleCustomWikiSearchHooks {
 	 * @global boolean $wgGoogleCustomWikiSearchReplaceSearch
 	 * @global boolean $wgDisableTextSearch
 	 * @global string $wgSearchForwardUrl
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function onSpecialSearchSetupEngine() {
 		global $wgGoogleCustomWikiSearchReplaceSearch, $wgDisableTextSearch, $wgSearchForwardUrl;
@@ -30,7 +30,7 @@ class GoogleCustomWikiSearchHooks {
 	 * @global boolean $wgGoogleCustomWikiSearchAppendToSearch
 	 * @param SpecialPage $special
 	 * @param string $par
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function onSpecialPageAfterExecute( SpecialPage $special, $par ) {
 		global $wgGoogleCustomWikiSearchAppendToSearch;
@@ -43,7 +43,7 @@ class GoogleCustomWikiSearchHooks {
 		// Add gcws header to output
 		$out = $special->getOutput();
 		$out->addModuleStyles( 'ext.googleCustomWikiSearch' );
-		$out->addHTML( Html::element( 'h1', array( 'id' => 'gcws_header' ),
+		$out->addHTML( Html::element( 'h1', [ 'id' => 'gcws_header' ],
 				$special->msg( 'googlecustomwikisearch' )->text() ) );
 
 		// Set up the Google search

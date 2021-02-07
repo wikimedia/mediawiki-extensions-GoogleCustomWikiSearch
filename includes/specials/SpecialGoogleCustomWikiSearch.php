@@ -2,7 +2,7 @@
 
 class SpecialGoogleCustomWikiSearch extends SpecialPage {
 
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'GoogleCustomWikiSearch' );
 	}
 
@@ -49,6 +49,9 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'redirects';
 	}
