@@ -196,7 +196,7 @@ END;
 	 * @return string
 	 */
 	public function getScriptFileName() {
-		return 'http://www.google.com/jsapi';
+		return 'https://www.gstatic.com/charts/loader.js';
 	}
 
 	/**
