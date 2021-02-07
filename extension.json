@@ -17,12 +17,12 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"GoogleCustomWikiSearchAlias": "SpecialGoogleCustomWikiSearch.alias.php"
+		"GoogleCustomWikiSearchAlias": "includes/specials/SpecialGoogleCustomWikiSearch.alias.php"
 	},
 	"AutoloadClasses": {
-		"GoogleCustomWikiSearch": "GoogleCustomWikiSearch.class.php",
-		"GoogleCustomWikiSearchHooks": "GoogleCustomWikiSearch.hooks.php",
-		"SpecialGoogleCustomWikiSearch": "SpecialGoogleCustomWikiSearch.php"
+		"GoogleCustomWikiSearch": "includes/GoogleCustomWikiSearch.php",
+		"GoogleCustomWikiSearchHooks": "includes/GoogleCustomWikiSearchHooks.php",
+		"SpecialGoogleCustomWikiSearch": "includes/specials/SpecialGoogleCustomWikiSearch.php"
 	},
 	"ResourceModules": {
 		"ext.googleCustomWikiSearch": {
@@ -32,8 +32,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "GoogleCustomWikiSearch"
+		"localBasePath": "resources",
+		"remoteExtPath": "GoogleCustomWikiSearch/resources"
 	},
 	"Hooks": {
 		"SpecialSearchSetupEngine": "GoogleCustomWikiSearchHooks::onSpecialSearchSetupEngine",
