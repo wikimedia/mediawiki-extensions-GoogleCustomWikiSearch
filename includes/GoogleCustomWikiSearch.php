@@ -183,7 +183,7 @@ window.__gcse = {
 	var cx = '{$this->getId()}';
 	var gcse = document.createElement('script'); gcse.type = 'text/javascript';
 	gcse.async = true;
-	gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+	gcse.src = document.location.protocol +
 		'//www.google.com/cse/cse.js?theme={$this->getTheme()}&language={$this->getLanguage()->getCode()}&cx=' + cx;
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 })();
