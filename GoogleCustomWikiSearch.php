@@ -11,5 +11,5 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	);
 	return;
 } else {
-	die( 'This version of the GoogleCustomWikiSearch extension requires MediaWiki 1.29+' );
+	die( 'This version of the GoogleCustomWikiSearch extension requires MediaWiki 1.31+' );
 }

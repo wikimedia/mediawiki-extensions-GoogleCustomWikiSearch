@@ -229,7 +229,7 @@ END;
 		// Strip underscores from title parameter; most of the time we'll want
 		// text from here. But don't strip underscores from actual text params!
 		$titleParam = str_replace( '_', ' ', $default );
-		$correctTerm = isset( $term ) ? $term : $titleParam;
+		$correctTerm = $term ?? $titleParam;
 
 		return str_replace( "\n", " ", $correctTerm );
 	}

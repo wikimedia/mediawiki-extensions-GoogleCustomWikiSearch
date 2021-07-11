@@ -1,12 +1,12 @@
 {
 	"name": "GoogleCustomWikiSearch",
-	"version": "0.5.0 beta",
+	"version": "0.6.0",
 	"author": "Ike Hecht for [http://wikiworks.com/ WikiWorks]",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleCustomWikiSearch",
 	"descriptionmsg": "gcws-desc",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.31.0"
 	},
 	"SpecialPages": {
 		"GoogleCustomWikiSearch": "SpecialGoogleCustomWikiSearch"
