@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Justincheng12345"
+			"Justincheng12345",
+			"Winston Sung"
 		]
 	},
-	"googlecustomwikisearch": "Google自訂維基搜尋",
+	"googlecustomwikisearch": "Google自訂wiki搜尋",
 	"gcws-desc": "容許與Google自訂搜尋或Google站點搜尋集成"
 }
