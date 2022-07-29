@@ -168,23 +168,20 @@ END;
 		$term = $this->getTermEncoded();
 		return <<<END
 function gcseCallback() {
-	if (document.readyState != 'complete')
-		return google.setOnLoadCallback(gcseCallback, true);
 	google.search.cse.element.render({gname:'gcws', div:'cse', {$this->getSearchDisplayOption()}});
 	var element = google.search.cse.element.getElement('gcws');
 	element.execute( {$term} );
 };
 window.__gcse = {
 	parsetags: 'explicit',
-	callback: gcseCallback
+	initializationCallback: gcseCallback
 };
 
 (function() {
 	var cx = '{$this->getId()}';
 	var gcse = document.createElement('script'); gcse.type = 'text/javascript';
 	gcse.async = true;
-	gcse.src = document.location.protocol +
-		'//www.google.com/cse/cse.js?theme={$this->getTheme()}&language={$this->getLanguage()->getCode()}&cx=' + cx;
+	gcse.src = 'https://cse.google.com/cse.js?theme={$this->getTheme()}&language={$this->getLanguage()->getCode()}&cx=' + cx;
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 })();
 END;
