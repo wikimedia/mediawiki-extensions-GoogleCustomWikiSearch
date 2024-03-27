@@ -29,10 +29,10 @@ class GoogleCustomWikiSearchHooks {
 	 *
 	 * @global boolean $wgGoogleCustomWikiSearchAppendToSearch
 	 * @param SpecialPage $special
-	 * @param string $par
+	 * @param ?string $subPage
 	 * @return bool
 	 */
-	public static function onSpecialPageAfterExecute( SpecialPage $special, $par ) {
+	public static function onSpecialPageAfterExecute( SpecialPage $special, $subPage ) {
 		global $wgGoogleCustomWikiSearchAppendToSearch;
 
 		// Only modify Special:Search
@@ -50,7 +50,7 @@ class GoogleCustomWikiSearchHooks {
 		$googleCustomWikiSearch = new GoogleCustomWikiSearch( $special->getContext() );
 
 		$request = $special->getRequest();
-		$term = GoogleCustomWikiSearch::getSearchTerm( $request->getText( 'search' ), $par );
+		$term = GoogleCustomWikiSearch::getSearchTerm( $request->getText( 'search' ), $subPage );
 		$googleCustomWikiSearch->doSearch( $term );
 
 		return true;

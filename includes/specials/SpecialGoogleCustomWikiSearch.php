@@ -9,18 +9,25 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 	/**
 	 * Entry point
 	 *
-	 * @param string $par
+	 * @param ?string $subPage
 	 */
-	public function execute( $par ) {
+	public function execute( $subPage ) {
 		// Shamelessly borrowed from class SpecialSearch
 		$this->setHeaders();
 		$this->outputHeader();
 		$out = $this->getOutput();
-		$out->allowClickjacking();
+		if ( method_exists( $out, 'allowClickjacking' ) ) {
+			// Up to MW 1.41
+			// @phan-suppress-next-line PhanUndeclaredMethod
+			$out->allowClickjacking();
+		} else {
+			// MW 1.41+
+			$out->setPreventClickjacking( false );
+		}
 
 		// Fetch the search term
 		$request = $this->getRequest();
-		$term = GoogleCustomWikiSearch::getSearchTerm( $request->getText( 'term' ), $par );
+		$term = GoogleCustomWikiSearch::getSearchTerm( $request->getText( 'term' ), $subPage );
 
 		$this->showResults( $term );
 	}
