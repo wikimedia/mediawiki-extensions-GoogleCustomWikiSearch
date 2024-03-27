@@ -215,17 +215,17 @@ END;
 
 	/**
 	 * Determine and format the correct search term to use
-	 * If $term is not set, use $default.
+	 * If $term is not set, use $default (usually from /subpage)
 	 *
 	 * @param string $term
-	 * @param string $default
+	 * @param ?string $default
 	 * @return string
 	 */
-	public static function getSearchTerm( $term, $default ) {
+	public static function getSearchTerm( $term, $default ): string {
 		// from SpecialSearch
 		// Strip underscores from title parameter; most of the time we'll want
 		// text from here. But don't strip underscores from actual text params!
-		$titleParam = str_replace( '_', ' ', $default );
+		$titleParam = str_replace( '_', ' ', $default ?? '' );
 		$correctTerm = $term ?? $titleParam;
 
 		return str_replace( "\n", " ", $correctTerm );
