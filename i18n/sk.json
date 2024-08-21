@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"googlecustomwikisearch": "Vlastné vyhľadávanie wiki Google",
+	"gcws-desc": "Umožňuje integráciu s Google Custom Search alebo Google Site Search"
+}
