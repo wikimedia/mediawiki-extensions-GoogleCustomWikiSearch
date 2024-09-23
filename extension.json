@@ -9,7 +9,7 @@
 		"MediaWiki": ">= 1.31.0"
 	},
 	"SpecialPages": {
-		"GoogleCustomWikiSearch": "SpecialGoogleCustomWikiSearch"
+		"GoogleCustomWikiSearch": "MediaWiki\\Extension\\GoogleCustomWikiSearch\\SpecialGoogleCustomWikiSearch"
 	},
 	"MessagesDirs": {
 		"GoogleCustomWikiSearch": [
@@ -20,9 +20,9 @@
 		"GoogleCustomWikiSearchAlias": "includes/specials/SpecialGoogleCustomWikiSearch.alias.php"
 	},
 	"AutoloadClasses": {
-		"GoogleCustomWikiSearch": "includes/GoogleCustomWikiSearch.php",
-		"GoogleCustomWikiSearchHooks": "includes/GoogleCustomWikiSearchHooks.php",
-		"SpecialGoogleCustomWikiSearch": "includes/specials/SpecialGoogleCustomWikiSearch.php"
+		"MediaWiki\\Extension\\GoogleCustomWikiSearch\\GoogleCustomWikiSearch": "includes/GoogleCustomWikiSearch.php",
+		"MediaWiki\\Extension\\GoogleCustomWikiSearch\\Hooks": "includes/Hooks.php",
+		"MediaWiki\\Extension\\GoogleCustomWikiSearch\\SpecialGoogleCustomWikiSearch": "includes/specials/SpecialGoogleCustomWikiSearch.php"
 	},
 	"ResourceModules": {
 		"ext.googleCustomWikiSearch": {
@@ -35,9 +35,14 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "GoogleCustomWikiSearch/resources"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\GoogleCustomWikiSearch\\Hooks"
+		}
+	},
 	"Hooks": {
-		"SpecialSearchSetupEngine": "GoogleCustomWikiSearchHooks::onSpecialSearchSetupEngine",
-		"SpecialPageAfterExecute": "GoogleCustomWikiSearchHooks::onSpecialPageAfterExecute"
+		"SpecialPageBeforeExecute": "main",
+		"SpecialPageAfterExecute": "main"
 	},
 	"config": {
 		"GoogleCustomWikiSearchReplaceSearch": {

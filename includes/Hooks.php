@@ -1,27 +1,35 @@
 <?php
 
-class GoogleCustomWikiSearchHooks {
+namespace MediaWiki\Extension\GoogleCustomWikiSearch;
+
+use Html;
+use MediaWiki\SpecialPage\Hook\SpecialPageAfterExecuteHook;
+use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
+use MediaWiki\Specials\SpecialSearch;
+use SpecialPage;
+
+class Hooks implements SpecialPageAfterExecuteHook, SpecialPageBeforeExecuteHook {
 
 	/**
 	 * Possibly replace the built-in search
-	 *
+	 * @param SpecialPage $special
+	 * @param string $subPage
 	 * @global boolean $wgGoogleCustomWikiSearchReplaceSearch
 	 * @global boolean $wgDisableTextSearch
 	 * @global string $wgSearchForwardUrl
-	 * @return bool
 	 */
-	public static function onSpecialSearchSetupEngine() {
-		global $wgGoogleCustomWikiSearchReplaceSearch, $wgDisableTextSearch, $wgSearchForwardUrl;
+	public function onSpecialPageBeforeExecute( $special, $subPage ) {
+		if ( $special instanceof SpecialSearch ) {
+			global $wgGoogleCustomWikiSearchReplaceSearch, $wgDisableTextSearch, $wgSearchForwardUrl;
 
-		if ( !$wgGoogleCustomWikiSearchReplaceSearch ) {
-			return true;
+			if ( !$wgGoogleCustomWikiSearchReplaceSearch ) {
+				return;
+			}
+
+			$wgDisableTextSearch = true;
+			$specialPageTitle = SpecialPage::getTitleFor( 'GoogleCustomWikiSearch' );
+			$wgSearchForwardUrl = $specialPageTitle->getFullURL( 'term=$1' );
 		}
-
-		$wgDisableTextSearch = true;
-		$specialPageTitle = SpecialPage::getTitleFor( 'GoogleCustomWikiSearch' );
-		$wgSearchForwardUrl = $specialPageTitle->getFullURL( 'term=$1' );
-
-		return true;
 	}
 
 	/**
@@ -32,7 +40,7 @@ class GoogleCustomWikiSearchHooks {
 	 * @param ?string $subPage
 	 * @return bool
 	 */
-	public static function onSpecialPageAfterExecute( SpecialPage $special, $subPage ) {
+	public function onSpecialPageAfterExecute( $special, $subPage ) {
 		global $wgGoogleCustomWikiSearchAppendToSearch;
 
 		// Only modify Special:Search

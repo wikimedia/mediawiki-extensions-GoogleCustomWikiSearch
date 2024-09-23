@@ -1,5 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\GoogleCustomWikiSearch;
+
+use ContextSource;
+use FormatJson;
+use IContextSource;
+use SpecialPage;
+
 class GoogleCustomWikiSearch extends ContextSource {
 	/**
 	 * The term to search for
@@ -91,7 +98,7 @@ class GoogleCustomWikiSearch extends ContextSource {
 		return wfSetVar( $this->codeVersion, $googleVersion );
 	}
 
-	public function setIsOnSpecialSearch( Boolean $isOnSpecialSearch ) {
+	public function setIsOnSpecialSearch( bool $isOnSpecialSearch ) {
 		return wfSetVar( $this->isOnSpecialSearch, $isOnSpecialSearch );
 	}
 
@@ -156,7 +163,7 @@ class GoogleCustomWikiSearch extends ContextSource {
 		{$this->getSearchDisplayOption()}
 		{$this->getOptions()}
 		customSearchControl.draw('cse', options);
-		customSearchControl.execute( {$term} );
+		customSearchControl.execute( $term );
 	}, true);
 END;
 	}
@@ -170,7 +177,7 @@ END;
 function gcseCallback() {
 	google.search.cse.element.render({gname:'gcws', div:'cse', {$this->getSearchDisplayOption()}});
 	var element = google.search.cse.element.getElement('gcws');
-	element.execute( {$term} );
+	element.execute( $term );
 };
 window.__gcse = {
 	parsetags: 'explicit',

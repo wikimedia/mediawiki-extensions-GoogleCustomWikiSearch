@@ -1,5 +1,9 @@
 <?php
 
+namespace MediaWiki\Extension\GoogleCustomWikiSearch;
+
+use SpecialPage;
+
 class SpecialGoogleCustomWikiSearch extends SpecialPage {
 
 	public function __construct() {
