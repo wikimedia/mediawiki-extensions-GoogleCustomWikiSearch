@@ -112,7 +112,7 @@ class GoogleCustomWikiSearch extends ContextSource {
 	 *
 	 * @param IContextSource|null $context
 	 */
-	public function __construct( IContextSource $context = null ) {
+	public function __construct( ?IContextSource $context = null ) {
 		global $wgGoogleCustomWikiSearchId, $wgGoogleCustomWikiSearchTheme,
 		$wgGoogleCustomWikiSearchOptions, $wgGoogleCustomWikiSearchCodeVersion;
 
