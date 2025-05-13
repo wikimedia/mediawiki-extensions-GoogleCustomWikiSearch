@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"YeBoy371",
 			"아라"
 		]
 	},
-	"googlecustomwikisearch": "Google 맞춤 위키 검색",
-	"gcws-desc": "Google 맞춤 검색이나 Google 사이트 검색을 통합할 수 있습니다"
+	"googlecustomwikisearch": "구글 맞춤 위키 검색",
+	"gcws-desc": "구글 맞춤 검색이나 구글 사이트 검색을 통합할 수 있습니다"
 }
