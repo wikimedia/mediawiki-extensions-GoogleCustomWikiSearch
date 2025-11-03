@@ -6,7 +6,7 @@
 	"descriptionmsg": "gcws-desc",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"SpecialPages": {
 		"GoogleCustomWikiSearch": "MediaWiki\\Extension\\GoogleCustomWikiSearch\\SpecialGoogleCustomWikiSearch"

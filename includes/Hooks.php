@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\GoogleCustomWikiSearch;
 
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\SpecialPage\Hook\SpecialPageAfterExecuteHook;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
 use MediaWiki\Specials\SpecialSearch;
