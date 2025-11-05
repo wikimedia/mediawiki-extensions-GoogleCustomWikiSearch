@@ -52,7 +52,7 @@ class SpecialGoogleCustomWikiSearch extends SpecialPage {
 	protected function setupPage( $term ) {
 		$out = $this->getOutput();
 		if ( strval( $term ) !== '' ) {
-			$out->setPageTitle( $this->msg( 'searchresults' ) );
+			$out->setPageTitle( $this->msg( 'searchresults' )->escaped() );
 			$out->setHTMLTitle( $this->msg( 'pagetitle' )
 					->plaintextParams( $this->msg( 'searchresults-title' )->plaintextParams( $term )->text() )
 					->inContentLanguage()->text()
