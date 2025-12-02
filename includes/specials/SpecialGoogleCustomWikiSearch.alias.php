@@ -83,12 +83,17 @@ $specialPageAliases['nl'] = [
 	'GoogleCustomWikiSearch' => [ 'GoogleAangepastWikizoeken' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'GoogleCustomWikiSearch' => [ 'GoogleCustomWikiSearch' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'GoogleCustomWikiSearch' => [ 'Google定制wiki搜索', 'Google定制维基搜索' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
-	'GoogleCustomWikiSearch' => [ 'Google_自訂_Wiki_搜尋', 'Google_自訂維基搜尋' ],
+	'GoogleCustomWikiSearch' => [ 'Google自訂wiki搜尋', 'Google_自訂_Wiki_搜尋', 'Google_自訂維基搜尋' ],
 ];
